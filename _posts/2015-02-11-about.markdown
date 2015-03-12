@@ -4,7 +4,7 @@ title:  "About"
 date:   2015-03-01 14:34:25
 categories: mediator feature
 tags: featured
-image: /assets/images/meeting.jpg
+image: /assets/images/about.jpg
 ---
 
 
