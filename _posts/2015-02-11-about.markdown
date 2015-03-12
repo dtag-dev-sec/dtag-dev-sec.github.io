@@ -27,7 +27,7 @@ We want to thank the following people / organizations / projects for their great
 
 - **Lutz Wischmann** (our consultant / friend / main developer of Sicherheitstacho / Honeypot backend systems)
 - **Honeypot developers** for their patient support for our individual feature requests
-- **[The Honeynet project](http://www.honeynet.org)** for providing great tools and a platform for discussion
+- **[The Honeynet Project](http://www.honeynet.org)** for providing great tools and a platform for discussion
 - **Christian Müller / Mark Bolten from CRONON / Strato** for (as always) great support
 
 # Deutsche Telekom's Honeypot Team
