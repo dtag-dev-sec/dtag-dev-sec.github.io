@@ -19,7 +19,7 @@ security employees can work one day a month on a technical topic, aside from day
 ## T-Pot CE
 
 T-Pot CE (Community Edition) is a honeypot framework, which is based on existing honeypots ([glastopf](http://glastopf.org/), [kippo](https://github.com/desaster/kippo), [honeytrap](http://honeytrap.carnivore.it/) and [dionaea](http://dionaea.carnivore.it/)), the network IDS/IPS [suricata](http://suricata-ids.org/), [elk](http://www.elasticsearch.org/overview/), [ewsposter](https://github.com/dtag-dev-sec/ews) and some
-[docker](https://www.docker.com/) magic. A detailed description can be found in [this article](http://dtag-dev-sec.github.io/).
+[docker](https://www.docker.com/) magic. A detailed description can be found in [this article](http://dtag-dev-sec.github.io/mediator/feature/2015/03/11/concept.html).
 
 ## Nodepot
 
