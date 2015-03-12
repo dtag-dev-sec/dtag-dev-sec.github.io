@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Meet us at the Honeynet Workshop 2015 in Stavanger"
+date:   2015-03-01 14:34:25
+categories: mediator feature
+tags: featured
+image: /assets/images/meeting.jpg
+---
+
+We truely believe in the power of a strong community.
+Last year, some of us joined [The Honeynet Project](http://honeynet.org) where we found shelter at the [Systenter Chapter](http://www.sysenter-honeynet.org/). Some of us will attend this year's [Honeynet Workshop](http://stavanger2015.honeynet.org) in Stavanger, Norway.
+
+We are really looking forward to the technical discussions and the exchange of opinions and experience.
+
+
+
