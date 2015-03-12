@@ -29,6 +29,7 @@ We want to thank the following people / organizations / projects for their great
 - **Honeypot developers** for their patient support for our individual feature requests
 - **[The Honeynet Project](http://www.honeynet.org)** for providing great tools and a platform for discussion
 - **Christian Müller / Mark Bolten from CRONON / Strato** for (as always) great support
+- **Andreas Kraft & Alexander Mannecke** for their cool dsl router protection demo based on honeypot data and the mobile sicherheitstacho app 
 
 # Deutsche Telekom's Honeypot Team
 
