@@ -12,7 +12,7 @@ We created a honeypot platform, which is based on the well-established honeypots
 
 # TL;DR
 1. Meet the [system requirements](#requirements).
-2. Download the [tpotce.iso](http://community-honeypot.de/tpotce.iso) (updated 03/13/2015, hosted by our friends from [Strato / Cronon](http://www.strato.de)) or [create it yourself](#createiso). 
+2. Download the [tpotce.iso](http://community-honeypot.de/tpotce.iso) or [create it yourself](#createiso). 
 2. Install the system in a [VM](#vm) or on [physical hardware](#hw) with [internet access](#placement). 
 3. Sit tight - [watch](http://sicherheitstacho.eu/?peers=communityPeers) and [analyze](#kibana).
 
@@ -108,14 +108,17 @@ Whether you install it on [real hardware](#hardware) or in a [virtual machine](#
 # Installation
 The installation of T-Pot is simple. 
 
-First, decide if you want to download our prebuilt installation ISO image [tpotce.iso](http://community-honeypot.de/tpotce.iso) ***or*** [create it yourself](#createiso).
+First, decide if you want to download our prebuilt installation ISO image [tpotce.iso](http://community-honeypot.de/tpotce.iso) ***or*** [create it yourself](#createiso). 
 
 Second, decide where you want to let the system run: [real hardware](#hardware) or in a [virtual machine](#vm)?
 
 <a name="prebuilt"></a>
 ## Prebuilt ISO Image
 We provide an installation ISO image for download (~630MB), which is created using the same [tool](https://github.com/dtag-dev-sec/tpotce) you can use yourself in order to create your own image. It will basically just save you some time downloading components and creating the ISO image. 
-You can download the prebuilt installation image [here](http://community-honeypot.de/tpotce.iso) and jump to the [installation](#vm) section. 
+You can download the prebuilt installation image [here](http://community-honeypot.de/tpotce.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato / Cronon](http://www.strato.de)).
+
+    shasum tpotce.iso
+    e26117cf99076267dadf90528cc25c6eb84fe615  tpotce.iso
 
 <a name="createiso"></a>
 ## Create your own ISO Image
