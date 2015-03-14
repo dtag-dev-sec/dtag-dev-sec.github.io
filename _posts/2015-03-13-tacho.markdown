@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Update of Sicherheitstacho"
+date:   2015-03-13 22:04:25
+categories: mediator feature
+tags: featured
+image: /assets/images/fitness.jpg
+---
+
+We have just now updated our [Sicherheitstacho](http://www.sicherheitstacho.eu) to be able to show the data
+from the community honeypots. Just follow this [link](http://sicherheitstacho.eu/?peers=communityPeers).
+
