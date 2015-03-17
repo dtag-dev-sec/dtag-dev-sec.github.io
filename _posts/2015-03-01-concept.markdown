@@ -16,6 +16,9 @@ We created a honeypot platform, which is based on the well-established honeypots
 2. Install the system in a [VM](#vm) or on [physical hardware](#hw) with [internet access](#placement). 
 3. Sit tight - [watch](http://sicherheitstacho.eu/?peers=communityPeers) and [analyze](#kibana).
 
+We have created a nice [installation video](https://youtu.be/0MUfRGdoVkM) for you in case you run into problems. Please
+be advised, that one CPU is fully sufficient to run T-Pot.
+
 Please note: We will ensure the compatibility to the Intel NUC platform, as we really like this handy format.
 
 # Documentation
