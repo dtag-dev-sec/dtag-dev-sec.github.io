@@ -154,9 +154,14 @@ You may want to run T-Pot in a virtualized environment. The virtual system confi
 
 We successfully tested T-Pot with [VirtualBox](https://www.virtualbox.org) and [VMWare](http://www.vmware.com) with just little modifications to the default machine configurations. 
 
-It is important to make sure you meet the [system requirements](#requirements) and assign a virtual harddisk >=40GB, >=2GB RAM and bridged networking to T-Pot. <br>If you want to use a wifi card as primary NIC for T-Pot (which we do not recommend, but in some cases, it might be necessary), mind that not all network interface drivers support wireless cards. E.g. in VirtualBox, you then have to choose the *"MT SERVER"* model of the NIC.
+It is important to make sure you meet the [system requirements](#requirements) and assign a virtual harddisk >=40GB, >=2GB RAM and bridged networking to T-Pot. 
+
+You need to enable promiscuous mode for the network interface for suricata to work properly. Make sure you enable it during configuration.
+
+If you want to use a wifi card as primary NIC for T-Pot (which we do not recommend, but in some cases, it might be necessary), mind that not all network interface drivers support all wireless cards. E.g. in VirtualBox, you then have to choose the *"MT SERVER"* model of the NIC.
 
 Last, mount the `tpotce.iso` ISO to the VM and and continue with the installation. You can now jump [here](#firstrun).
+
 
 
 
