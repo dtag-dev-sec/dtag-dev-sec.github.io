@@ -205,7 +205,7 @@ This will start the SSH daemon on port **64295**. It is configured to prevent pa
 
 In addition to this - and maybe easier than getting a pubkey on the system - you can enable two-factor authentication (2fa) and use an app like [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) as a second authentication factor. 
 
-Make sure that you invoke the following script as the user *tsec*. ***Do not run it as root or via sudo***. Otherwise the setup of two factor authentication won't work.
+Make sure that you invoke the following script as the user *tsec*. ***Do not run it as root or via sudo***. Otherwise the setup of two factor authentication will fail.
 
     ~/2fa_enable.sh
 
@@ -273,10 +273,10 @@ We planned a couple of features we haven't been able to implement yet. Those fea
 - **Q**:*** I try to login via ssh but my ssh key gets rejected?*** <br>**A**: Are you sure you are connecting to the right port? The SSH honeypot *kippo* is listening on port 22. *OpenSSH* is listening on port 64295. More [here](#ssh).
 - **Q**: ***I enabled two-factor authentication, but all I get is a password prompt and it does not accept my password. What happened?***<br>**A**: You probably invoked the `2fa_enable.sh` script (a) as *root* or (b) via *sudo*, and you should have invoked it as the user *tsec*.<br>Fix for (a): 
 
-      sudo mv /root/.google_authenticator /home/tsec/.google_authenticator
-      sudo chown tsec:tsec /home/tsec/.google_authenticator
+        sudo mv /root/.google_authenticator /home/tsec/.google_authenticator
+        sudo chown tsec:tsec /home/tsec/.google_authenticator
 <br>Fix for (b): 
-      chown tsec:tsec /home/tsec/.google_authenticator
+        chown tsec:tsec /home/tsec/.google_authenticator
 
 ...  to  be extended depending on feedback.
 
