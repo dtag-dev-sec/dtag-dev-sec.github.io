@@ -276,6 +276,7 @@ We planned a couple of features we haven't been able to implement yet. Those fea
         sudo mv /root/.google_authenticator /home/tsec/.google_authenticator
         sudo chown tsec:tsec /home/tsec/.google_authenticator
 <br>Fix for (b): 
+
         chown tsec:tsec /home/tsec/.google_authenticator
 
 ...  to  be extended depending on feedback.
