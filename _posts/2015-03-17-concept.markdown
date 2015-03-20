@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "(Update) T-Pot: A Multi-Honeypot Platform"
+title:  "T-Pot: A Multi-Honeypot Platform"
 date:   2015-03-17 09:29:25
 categories: mediator feature
 tags: featured
