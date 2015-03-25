@@ -289,9 +289,9 @@ We planned a couple of features we haven't been able to implement yet. Those fea
 - **Q** : ***How do I enable SSH?*** <br> **A** : Run the *ssh_enable.sh* script in tsec's home directory. More [here](#ssh).
 - **Q** : ***On what port is the SSH daemon listening?*** <br>**A**: OpenSSH is listening on port 64295. More [here](#ssh).
 - **Q** : ***Why didn't you add honeypot XYZ?*** <br>**A** : We added the honeypot daemons which we thought were most suitable and we have good experience with. If you think a crucial honeypot daemon is missing, let us [know](#contact). Maybe someday we will add it.
-- **Q** : ***Why is my installation failing?  ***<br>**A** : Some people have tried to install it in VirtualBox using the default disk size of 8GB. This is not enough storage and the installation will fail. Same applies to VMWare's Easy Install. Make sure you meet the [system requirements](#requirements). T-Pot requires at least 2GB RAM and 40GB disk space. And make sure that a working internet connection is available. 
-- **Q** : *** I try to login via ssh but my ssh key gets rejected?*** <br>**A**: Are you sure you are connecting to the right port? The SSH honeypot *kippo* is listening on port 22. *OpenSSH* is listening on port 64295. More [here](#ssh).
-- **Q** : ***I enabled two-factor authentication, but all I get is a password prompt and it does not accept my password. What happened?***<br>**A** : You probably invoked the `2fa_enable.sh` script (a) as *root* or (b) via *sudo*, and you should have invoked it as the user *tsec*.<br>Fix for (a): 
+- **Q** : ***Why is my installation failing?*** <br>**A** : Some people have tried to install it in VirtualBox using the default disk size of 8GB. This is not enough storage and the installation will fail. Same applies to VMWare's Easy Install. Make sure you meet the [system requirements](#requirements). T-Pot requires at least 2GB RAM and 40GB disk space. And make sure that a working internet connection is available. 
+- **Q** : ***I try to login via ssh but my ssh key gets rejected?*** <br>**A**: Are you sure you are connecting to the right port? The SSH honeypot *kippo* is listening on port 22. *OpenSSH* is listening on port 64295. More [here](#ssh).
+- **Q** : ***I enabled two-factor authentication, but all I get is a password prompt and it does not accept my password. What happened?*** <br>**A** : You probably invoked the `2fa_enable.sh` script (a) as *root* or (b) via *sudo*, and you should have invoked it as the user *tsec*.<br>Fix for (a): 
 
         sudo mv /root/.google_authenticator /home/tsec/.google_authenticator
         sudo chown tsec:tsec /home/tsec/.google_authenticator
@@ -299,7 +299,7 @@ We planned a couple of features we haven't been able to implement yet. Those fea
 
         sudo chown tsec:tsec /home/tsec/.google_authenticator
 
-- **Q** : *** I cannot expose T-Pot to full internet access, but I still want to participate. Can you tell me which ports should be forwarded to T-Pot?*** <br>**A** : T-Pot works best when exposed to the unfiltered internet. If you are unable to place it in that way, [here](#placement) is a list of ports that should be forwarded to T-Pot. 
+- **Q** : ***I cannot expose T-Pot to full internet access, but I still want to participate. Can you tell me which ports should be forwarded to T-Pot?*** <br>**A** : T-Pot works best when exposed to the unfiltered internet. If you are unable to place it in that way, [here](#placement) is a list of ports that should be forwarded to T-Pot. 
 
 
 
