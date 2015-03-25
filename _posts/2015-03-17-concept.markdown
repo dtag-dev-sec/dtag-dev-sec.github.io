@@ -197,7 +197,7 @@ If you are behind a NAT gateway (e.g. home router), here is a list of ports that
 |---|---|---|
 | dionaea | TCP  | 21, 42, 135, 443, 445, 1433, 3306, 5060, 5061, 8080  |
 | dionaea | UDP  | 69, 5060 | 
-| kippoo | TCP | 22 | 
+| kippo | TCP | 22 | 
 | honeytrap | TCP | 25, 110, 139, 3389, 4444, 4899, 5900, 21000 | 
 | glastopf | TCP | 80   |
 
