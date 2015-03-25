@@ -191,6 +191,38 @@ All honeypot services are started automatically.
 # System Placement
 Make sure your system is reachable through the internet. Otherwise it will not capture any attacks, other than the ones from your hostile internal network! We recommend you put it in an unfiltered zone, where all TCP and UDP traffic is forwarded to T-Pot's network interface. 
 
+If you are behind a NAT gateway (e.g. home router), here is a list of ports that should be forwarded to T-Pot.
+
+|Transport   | Port  | Resonding Honeypot  |  
+|---|---|---|
+| TCP  | 21  | dionaea  |
+|  |  22 | kippo  |
+|   | 25  | honeytrap  |
+|   |  42 |  dionaea |
+|   | 80  | glastopf  |
+|   |  110 |  honeytrap |
+|   | 135  | dionaea  |
+|   |  139 | honeytrap   |
+|   | 443  | dionaea  |
+|   |  445 | dionaea  |
+|   | 1433  | dionaea |
+|   | 3306  | dionaea  |
+|   | 3389  | honeytrap  |
+|   | 4444  | honeytrap |
+|   | 4899  | honeytrap  |
+|   | 5050  | dionaea  |
+|   | 5061  |  dionaea |
+|   | 5900  | honeytrap  |
+|   | 8080  | dionaea  |
+|   |  21000 | honeytrap  |
+| UDP  |  69 | dionaea  |
+|   |  5060 | dionaea  |
+Basically, you can forward as many TCP ports as you want, as honeytrap dynamically binds any TCP port that is not covered by the other honeypot daemons. 
+
+In case you want external SSH access, forward TCP port 64295 to T-Pot, see below.
+
+T-Pot requires outgoing http and https connections for updates (ubuntu, docker).
+
 
 <a name="options"></a>
 # Options
@@ -280,6 +312,12 @@ We planned a couple of features we haven't been able to implement yet. Those fea
 <br>Fix for (b): 
 
         sudo chown tsec:tsec /home/tsec/.google_authenticator
+
+- **Q**:*** I cannot expose T-Pot to full internet access, but I still want to participate. Can you tell me which ports should be forwarded to T-Pot?*** <br>**A**: T-Pot works best when exposed to the unfiltered internet. If you are unable to place it in that way, [here](#placement) is a list of ports that should be forwarded to T-Pot. 
+
+
+
+
 
 ...  to  be extended depending on feedback.
 
