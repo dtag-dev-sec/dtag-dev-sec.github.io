@@ -197,7 +197,7 @@ If you are behind a NAT gateway (e.g. home router), here is a list of ports that
 |---|---|---|
 | dionaea | TCP  | 21, 42, 135, 443, 445, 1433, 3306, 5060, 5061, 8080  |
 | dionaea | UDP  | 69, 5060 | 
-| kippoo | TCP | 22 | 
+| kippo | TCP | 22 | 
 | honeytrap | TCP | 25, 110, 139, 3389, 4444, 4899, 5900, 21000 | 
 | glastopf | TCP | 80   |
 
@@ -207,7 +207,7 @@ Basically, you can forward as many TCP ports as you want, as honeytrap dynamical
 
 In case you want external SSH access, forward TCP port 64295 to T-Pot, see below.
 
-T-Pot requires outgoing http and https connections for updates (ubuntu, docker).
+T-Pot requires outgoing http and https connections for updates (ubuntu, docker) and attack submission (ewsposter, hpfeeds).
 
 
 <a name="options"></a>
