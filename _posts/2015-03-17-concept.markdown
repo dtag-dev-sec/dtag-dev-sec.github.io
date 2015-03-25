@@ -207,7 +207,7 @@ Basically, you can forward as many TCP ports as you want, as honeytrap dynamical
 
 In case you want external SSH access, forward TCP port 64295 to T-Pot, see below.
 
-T-Pot requires outgoing http and https connections for updates (ubuntu, docker).
+T-Pot requires outgoing http and https connections for updates (ubuntu, docker) and attack submission (ewsposter, hpfeeds).
 
 
 <a name="options"></a>
