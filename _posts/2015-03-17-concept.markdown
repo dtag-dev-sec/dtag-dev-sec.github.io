@@ -193,30 +193,16 @@ Make sure your system is reachable through the internet. Otherwise it will not c
 
 If you are behind a NAT gateway (e.g. home router), here is a list of ports that should be forwarded to T-Pot.
 
-|Transport   | Port  | Resonding Honeypot  |  
+| Resonding Honeypot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |Transport  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |Port(s) to forward|
 |---|---|---|
-| TCP  | 21  | dionaea  |
-|  |  22 | kippo  |
-|   | 25  | honeytrap  |
-|   |  42 |  dionaea |
-|   | 80  | glastopf  |
-|   |  110 |  honeytrap |
-|   | 135  | dionaea  |
-|   |  139 | honeytrap   |
-|   | 443  | dionaea  |
-|   |  445 | dionaea  |
-|   | 1433  | dionaea |
-|   | 3306  | dionaea  |
-|   | 3389  | honeytrap  |
-|   | 4444  | honeytrap |
-|   | 4899  | honeytrap  |
-|   | 5050  | dionaea  |
-|   | 5061  |  dionaea |
-|   | 5900  | honeytrap  |
-|   | 8080  | dionaea  |
-|   |  21000 | honeytrap  |
-| UDP  |  69 | dionaea  |
-|   |  5060 | dionaea  |
+| dionaea | TCP  | 21, 42, 135, 443, 445, 1433, 3306, 5060, 5061, 8080  |
+| dionaea | UDP  | 69, 5060 | 
+| kippoo | TCP | 22 | 
+| honeytrap | TCP | 25, 110, 139, 3389, 4444, 4899, 5900, 21000 | 
+| glastopf | TCP | 80   |
+
+<br>
+
 Basically, you can forward as many TCP ports as you want, as honeytrap dynamically binds any TCP port that is not covered by the other honeypot daemons. 
 
 In case you want external SSH access, forward TCP port 64295 to T-Pot, see below.
