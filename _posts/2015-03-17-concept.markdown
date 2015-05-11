@@ -21,7 +21,9 @@ We created a honeypot platform, which is based on the well-established honeypots
 We have created a nice [installation video](https://youtu.be/dWbJS_9sFNE) for you in case you run into problems. Please
 be advised, that one CPU is fully sufficient to run T-Pot.
 
-Please note: We will ensure the compatibility to the Intel NUC platform, as we really like this handy format.
+*Update:* In case you already have an Ubuntu 14.04.x running in your datacenter and are unable to install from an ISO image, we have created a [script](http://dtag-dev-sec.github.io/mediator/feature/2015/05/11/t-pot-autoinstall.html) that converts your Ubuntu base install into a full-fledged T-Pot within just a couple of minutes.
+
+*Please note*: We will ensure the compatibility to the Intel NUC platform, as we really like this handy format.
 
 # Documentation
 - [Background](#background)
