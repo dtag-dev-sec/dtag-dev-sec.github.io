@@ -126,7 +126,7 @@ We provide an installation ISO image for download (~630MB), which is created usi
 You can download the prebuilt installation image [here](http://community-honeypot.de/tpotce.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato](http://www.strato.de) / [Cronon](http://www.cronon.de).
 
     shasum tpotce.iso
-    e26117cf99076267dadf90528cc25c6eb84fe615  tpotce.iso
+    0e9bbed6fa9eae414eedef5129a2028280fa3369  tpotce.iso
 
 <a name="createiso"></a>
 ## Create your own ISO Image

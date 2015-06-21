@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Our Projects</title>
+  <meta name="description" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="http://dtag-dev-sec.github.io//mediator/feature/2015/03/10/stuff.html">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!--  <link rel="stylesheet" href=""> -->
+  <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+<a href="http://dtag-dev-sec.github.io/" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/dtag_logo.gif)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+        
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url(/assets/images/code.jpg)">
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">Our Projects</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Deutsche Telekom AG Honeypot Project</h4>
+              on
+              <time datetime="2015-03-10 15:34">10 Mar 2015</time>
+              <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p>Over the time, we developed a number of projects, which we mostly published on <a href="https://github.com/dtag-dev-sec/">Github</a>.</p>
+
+<p>Parts of them were developed in &quot;one day a month&quot; projects, others in spare time of dedicated persons.
+Our &quot;one day a month&quot; approach from the central security organization basically means, that the
+security employees can work one day a month on a technical topic, aside from day-to-day business. The topic must be somehow related to their work, but does not necessarily have to be security-focussed.</p>
+
+<h1 id="public-projects">Public Projects</h1>
+
+<h2 id="t-pot-ce">T-Pot CE</h2>
+
+<p>T-Pot CE (Community Edition) is a honeypot framework, which is based on existing honeypots (<a href="http://glastopf.org/">glastopf</a>, <a href="https://github.com/desaster/kippo">kippo</a>, <a href="http://honeytrap.carnivore.it/">honeytrap</a> and <a href="http://dionaea.carnivore.it/">dionaea</a>), the network IDS/IPS <a href="http://suricata-ids.org/">suricata</a>, <a href="http://www.elasticsearch.org/overview/">elk</a>, <a href="https://github.com/dtag-dev-sec/ews">ewsposter</a> and some
+<a href="https://www.docker.com/">docker</a> magic. A detailed description can be found in <a href="http://dtag-dev-sec.github.io/mediator/feature/2015/03/11/concept.html">this article</a>.</p>
+
+<h2 id="nodepot">Nodepot</h2>
+
+<p><a href="https://github.com/schmalle/Nodepot">Nodepot</a> is our <a href="http://glastopf.org/">glastopf</a> copycat, a web application honeypot based on NodeJS. Code is available <a href="https://github.com/schmalle/Nodepot">here</a>.</p>
+
+<h2 id="nodejs-hp-feed-module">NodeJS HP Feed Module</h2>
+
+<p>As an option for Nodepot you can use <a href="https://github.com/rep/hpfeeds">hpfeeds</a> to share data.
+We wrote a small NPM module to support hpfeeds that can be found <a href="https://github.com/schmalle/nodejs-hpfeeds">here</a>.</p>
+
+<h2 id="ewsposter">EWSposter</h2>
+
+<p><a href="https://github.com/dtag-dev-sec/ews">EWSposter</a> is a python application that collects information from multiple honeypot sensors and posts it to central collection services like the DTAG early warning system or hpfeeds.</p>
+
+<h2 id="ip-blacklist">IP-Blacklist</h2>
+
+<p>Our Early Warning System provides an API which can be queried for IP addresses that have been associated with malicious activities in our sensors.
+The Java example code for the IP blacklist is available <a href="https://github.com/dev-t-sec/BadIPFetch">here</a>.</p>
+
+<p>If you want to get an account for retrieving data, please contact us at cert @ telekom.de.</p>
+
+<h1 id="notable-internal-projects">Notable Internal Projects</h1>
+
+<p>Some of our projects have been research driven proof-of-concepts that never reached a status worth publishing, others were fulfilling purely internal purposes. However, to give you an idea of what we do for the Early Warning System of Deutsche Telekom, we wanted to mention the following projects.</p>
+
+<h2 id="sicherheitstacho-eu-securitydashboard-eu">sicherheitstacho.eu - securitydashboard.eu</h2>
+
+<p>The <a href="http://sicherheitstacho.eu">&quot;Sicherheitstacho&quot; / &quot;Securitydashboard&quot;</a> is our eye-candy vizualization frontend that displays live cyberattacks in a manager-friendly way. It provides live statistics from the sensor network we setup in the last years.  <br>
+... but of course, we also have a more technical system suitable for some analysis. ;-)</p>
+
+<h2 id="em-em"><em>honeypi</em> - Raspberry PI Honeypots</h2>
+
+<p>We are all fans of cool technologies, and we love playing with new toys. When the Raspberry PI got released, we built a custom ISO image with preinstalled <a href="http://dionaea.carnivore.it/">dionaea</a>, <a href="http://honeytrap.carnivore.it/">honeytrap</a> and <a href="https://github.com/desaster/kippo">kippo</a>. We added central management to the system using <a href="https://puppetlabs.com/">puppet</a>, and <a href="/assets/images/rpi.jpg" target="_blank">rolled out</a> approx. 80 to the international subsidaries of Deutsche Telekom. It was our first try to create low-efffort, easy-to-deploy honeypots to broaden our sensor base.</p>
+
+<p>We further added a <a href="/assets/images/honeypi-display1.jpg" target="blank">display</a> that provides some statistics and later a <a href="/assets/images/honeypi-display2.jpg" target="blank">touchscreen</a> .</p>
+
+<p>As the image is configured to be used internally, we have not planned to make it publicly available. </p>
+
+<h2 id="smartphone-honeypots">Smartphone Honeypots</h2>
+
+<p>In early 2011 we setup a mobile honeypot project wich simulates the network footprint of smartphones (iOS and Android). <a href="https://github.com/desaster/kippo">kippo</a> was modified so that the filesystem and commands matched those of an Android device as well as a jailbroken iPhone. Other honeypot daemons like <a href="http://dionaea.carnivore.it/">dionaea</a> and  <a href="http://honeytrap.carnivore.it/">honeytrap</a> were added. After attaching them to the 3G network, they were able to capture some device-specific attacks, e.g. some attack directly aiming for the addessbook and photos of the jailbroken iPhone.<br>
+Some results are documented <a href="http://arxiv.org/pdf/1301.7257v1.pdf">here</a>. Further, if you understand German, you can find some more information including a short video <a href="http://www.heise.de/security/meldung/Smartphone-Honeypots-im-Mobilfunknetz-der-Telekom-1630359.html">here</a>.</p>
+
+<h2 id="em-em"><em>honeydroid</em> - Android Honeypot</h2>
+
+<p>As a proof-of-concept, we modified <a href="/assets/images/honeydroid.jpg" target="blank">Android phones</a> so that their cellular network stack acts as a honeypot and displays some attack statistics. And yep, <em><a href="/assets/images/app.jpg" target="blank">there&#39;s an app for that</a></em> (kindof). German speaking people can find some more background information <a href="http://www.heise.de/security/meldung/Honeydroid-Android-Handy-wird-zur-Hackerfalle-1980058.html">here</a>. </p>
+
+<h2 id="rdp-honeypot">RDP Honeypot</h2>
+
+<p>We are currently developing a RDP honeypot that captures RDP scans and login attempts. </p>
+
+<h2 id="cvemapper">CVEmapper</h2>
+
+<p>Another project we have been working on is the CVEmapper. The CVEmapper takes information sumitted by our EWSposter as input and tries to determine if a known vulnerability (CVE) is currently being exploited. </p>
+
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+            
+              
+            
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4>Deutsche Telekom AG Honeypot Project</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="2015-03-10 15:34">10 Mar 2015</time></p>
+            </section>
+          </div>
+          
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="/">Deutsche Telekom AG Honeypot Project</a> &copy; 2015<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image"  style="background-image: url(/assets/images/tsy.jpg)">
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">DTAG Community Honeypot Project</h1>
+        <h2 class="blog-description"></h2>
+        <a href="/" class="btn">Back to Overview</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    $window.on('scroll', function() {
+      var top = $window.scrollTop();
+
+      if (top < 0 || top > 1500) { return; }
+      $image
+        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        .css('opacity', 1-Math.max(top/700, 0));
+    });
+    $window.trigger('scroll');
+
+    var height = $('.article-image').height();
+    $('.post-content').css('padding-top', height + 'px');
+
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({ scrollTop: target.offset().top }, 500);
+          return false;
+        }
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+
+  </body>
+</html>
