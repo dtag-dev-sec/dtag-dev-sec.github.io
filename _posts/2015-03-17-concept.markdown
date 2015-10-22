@@ -122,11 +122,11 @@ Second, decide where you want to let the system run: [real hardware](#hardware) 
 
 <a name="prebuilt"></a>
 ## Prebuilt ISO Image
-We provide an installation ISO image for download (~630MB), which is created using the same [tool](https://github.com/dtag-dev-sec/tpotce) you can use yourself in order to create your own image. It will basically just save you some time downloading components and creating the ISO image. 
+We provide an installation ISO image for download (~610MB), which is created using the same [tool](https://github.com/dtag-dev-sec/tpotce) you can use yourself in order to create your own image. It will basically just save you some time downloading components and creating the ISO image. 
 You can download the prebuilt installation image [here](http://community-honeypot.de/tpotce.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato](http://www.strato.de) / [Cronon](http://www.cronon.de).
 
     shasum tpotce.iso
-    0e9bbed6fa9eae414eedef5129a2028280fa3369  tpotce.iso
+    3b8f15eba2a478b106b202726661ce75c8fe7acc tpotce.iso
 
 <a name="createiso"></a>
 ## Create your own ISO Image
