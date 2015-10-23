@@ -18,8 +18,8 @@ Well, Docker deprecated their old versions and will no longer serve images to ol
 
 If you want to upgrade your existing installation you can download [this upgrade script](https://github.com/dtag-dev-sec/tpotce/blob/master/upgrade.sh):
 1.	Login to your T-Pot as tsec and execute the following commands, **but only run the script once**!
-			git clone https://github.com/dtag-dev-sec/tpotce.git
-			sudo tpotce/./upgrade.sh
+		git clone https://github.com/dtag-dev-sec/tpotce.git
+		sudo tpotce/./upgrade.sh
 2.	If everything worked fine the machine will reboot.
 3.	Check if your containers are running correctly by either by pressing CTRL+F2 or by logging in as tsec and sudo status.sh.
 
