@@ -7,7 +7,7 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>About</title>
+  <title>T-Pot - Important Update Notification </title>
   <meta name="description" content="" />
 
   <meta name="HandheldFriendly" content="True" />
@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="canonical" href="http://dtag-dev-sec.github.io//mediator/feature/2015/03/01/about.html">
+  <link rel="canonical" href="http://dtag-dev-sec.github.io//feature/2015/10/23/updated-docker.html">
 
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!--  <link rel="stylesheet" href=""> -->
@@ -37,16 +37,16 @@
       <article class="post">
         
         <div class="article-image">
-          <div class="post-image-image" style="background-image: url(/assets/images/about.jpg)">
+          <div class="post-image-image" style="background-image: url(/assets/images/docker.jpg)">
             Article Image
           </div>
           <div class="post-meta">
-            <h1 class="post-title">About</h1>
+            <h1 class="post-title">T-Pot - Important Update Notification </h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Deutsche Telekom AG Honeypot Project</h4>
               on
-              <time datetime="2015-03-01 15:34">01 Mar 2015</time>
+              <time datetime="2015-10-23 15:37">23 Oct 2015</time>
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
             <div style="text-align:center">
@@ -60,50 +60,35 @@
             <span class="post-reading-time"></span> read
           </div>
           <a name="topofpage"></a>
-          <p>Deutsche Telekom’s honeypot project was started in 2010 by a small group of enthusiasts. We initially started with Lukas Rist’s great <a href="http://glastopf.org/">Glastopf web honeypot</a> and soon added further honeypot daemons like <a href="https://github.com/desaster/kippo">kippo</a>, <a href="http://honeytrap.carnivore.it/">honeytrap</a> and <a href="http://dionaea.carnivore.it/">dionaea</a>. Over the next years we deployed more and more honeypots.</p>
+          <p>Last spring we released T-Pot and ever since, Docker evolved rapidly with new versions, new features, and eventually a new repository. With regards to early releases of T-Pot and the fast development of Docker, we manually pinned the Docker versions used to the 1.5.x and 1.6.x branches. Now, with the latest Docker releases and Dockers’ switch to a new repository for Ubuntu (and deprecating the one we have been using), we updated the T-Pot ISO and the GitHub project accordingly.</p>
 
-<p>Data captured on our honeypot sensors is visualized on our <a href="http://www.sicherheitstacho.eu">Sicherheitstacho</a> and we further use the information
-e.g. to inform our customers regarding infections.</p>
+<p>So, from now on, we will stick to the latest Docker version.</p>
 
-<p>We currently run about 180 honeypot sensors as part of Deutsche Telekom’s early warning system. Individual maintainance of such large number of systems became a time consuming and painful task. As a first step we created a standardized Raspberry PI honeypot image, which is managed by Puppet and distributed across our national subsidaries. To increase the efficiency even more, we decided to build T-Pot, a highly modular approach.</p>
+<p><em>But, why is this important to you?</em></p>
 
-<h1 id="contact">Contact</h1>
+<p>Well, Docker deprecated their old versions and will no longer serve images to old versions. So you will have to update in order to keep the system fully functional.</p>
 
-<p>If you want reach out to us, best contact us via email at cert @ telekom.de</p>
+<p>If you want to upgrade your existing installation you can download <a href="https://github.com/dtag-dev-sec/tpotce/blob/master/upgrade.sh">this upgrade script</a>:</p>
 
-<h1 id="thanks">Thanks</h1>
+<ol>
+  <li>
+    <p>Login to your T-Pot as <em>tsec</em> and execute the following commands, <strong>but only run the script once</strong>!</p>
 
-<p>We want to thank the following people / organizations / projects for their great work.<br /><br /></p>
+    <pre><code>git clone https://github.com/dtag-dev-sec/tpotce.git
+sudo tpotce/./upgrade.sh
+</code></pre>
+  </li>
+  <li>
+    <p>If everything worked fine the machine will reboot.</p>
+  </li>
+  <li>
+    <p>Check if your containers are running correctly by either by pressing CTRL+F2 or by logging in as <em>tsec</em> and <code>sudo status.sh</code>.</p>
+  </li>
+</ol>
 
-<ul>
-  <li><strong>Lutz Wischmann</strong> (our consultant / friend / main developer of Sicherheitstacho / Honeypot backend systems)</li>
-  <li><strong>Honeypot developers</strong> for their patient support for our individual feature requests</li>
-  <li><strong><a href="http://www.honeynet.org">The Honeynet Project</a></strong> for providing great tools and a platform for discussion</li>
-  <li><strong>Christian Müller / Mark Bolten from CRONON / Strato</strong> for (as always) great support</li>
-  <li><strong>Andreas Kraft &amp; Alexander Mannecke</strong> for their cool dsl router protection demo based on honeypot data and the mobile sicherheitstacho app</li>
-</ul>
+<p>Otherwise, if you wish to perform a new installation you can download the new ISO <a href="http://community-honeypot.de/tpotce.iso">here</a>.</p>
 
-<h1 id="deutsche-telekoms-honeypot-team">Deutsche Telekom’s Honeypot Team</h1>
-
-<p>The team consists of several people, who spend some work time and private time on this project.</p>
-
-<ul>
-  <li>Markus Schroer</li>
-  <li>Rainer Schmidt</li>
-  <li>Markus Schmall</li>
-  <li>André Vorbach</li>
-  <li>Marco Ochse</li>
-  <li>Norbert Krummen</li>
-  <li>another unnamed individual ;-)</li>
-</ul>
-
-<h3 id="initial-jekyll-template-written-by-dirk-fabisch">Initial Jekyll template written by Dirk Fabisch</h3>
-
-<p>A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-<a href="http://www.svenread.com/readium-ghost-theme/">Readium 2.0</a>. I use mediator on my own blog <a href="blog.base68.com">The Base</a>.</p>
-
-<p>You can <strong>download</strong> the theme here:
-<a href="https://github.com/dirkfabisch/mediator">https://github.com/dirkfabisch/mediator</a></p>
+<p>In case you encounter any problems, feel free to post an issue <a href="https://github.com/dtag-dev-sec/tpotce/issues">here</a>.</p>
 
 
         </section>
@@ -122,7 +107,7 @@ e.g. to inform our customers regarding infections.</p>
               <h4>Deutsche Telekom AG Honeypot Project</h4>
               <p class="bio"></p>
               <hr>
-              <p class="published">Published <time datetime="2015-03-01 15:34">01 Mar 2015</time></p>
+              <p class="published">Published <time datetime="2015-10-23 15:37">23 Oct 2015</time></p>
             </section>
           </div>
           

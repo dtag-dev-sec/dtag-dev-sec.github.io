@@ -60,8 +60,8 @@
             <span class="post-reading-time"></span> read
           </div>
           <a name="topofpage"></a>
-          <p>Yesterday Docker released version 1.10 (<a href="http://blog.docker.com/2016/02/docker-1-10/">http://blog.docker.com/2016/02/docker-1-10/</a>). While this release will
-improve on security and bring lots of useful features the automatic upgrade within T-Pot (<a href="http://dtag-dev-sec.github.io/feature/2015/10/23/updated-docker.html">http://dtag-dev-sec.github.io/feature/2015/10/23/updated-docker.html</a>) will hang.</p>
+          <p>Yesterday Docker released version 1.10 (http://blog.docker.com/2016/02/docker-1-10/). While this release will
+improve on security and bring lots of useful features the automatic upgrade within T-Pot (http://dtag-dev-sec.github.io/feature/2015/10/23/updated-docker.html) will hang.</p>
 
 <p>You have to manually upgrade Docker to the latest version in order for your T-Pot installation to work properly.</p>
 
@@ -75,56 +75,58 @@ improve on security and bring lots of useful features the automatic upgrade with
 
 <p>Please answer the following question with (N)o for T-Pot to work correctly:</p>
 
-<p>Configuration file &#39;/etc/default/docker&#39;</p>
+<p>Configuration file ‘/etc/default/docker’</p>
 
 <p>==&gt; Modified (by you or by a script) since installation.</p>
 
 <p>==&gt; Package distributor has shipped an updated version.</p>
 
 <p>What would you like to do about it ?  Your options are:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">Y or I  : install the package maintainer&#39;s version
+
+<pre><code>Y or I  : install the package maintainer's version
 
 N or O  : keep your currently-installed version
 
   D     : show the differences between the versions
 
   Z     : start a shell to examine the situation
-</code></pre></div>
+</code></pre>
+
 <p>The default action is to keep your current version.</p>
 
 <p>*** docker (Y/I/N/O/D/Z) [default=N] ? N</p>
 
-<p>Installing new version of config file /etc/bash_completion.d/docker ...</p>
+<p>Installing new version of config file /etc/bash_completion.d/docker …</p>
 
 <p>docker start/running, process 92746</p>
 
-<p>Processing triggers for libc-bin (2.19-0ubuntu6.6) ...</p>
+<p>Processing triggers for libc-bin (2.19-0ubuntu6.6) …</p>
 
-<p>Processing triggers for ureadahead (0.100.0-16) ...</p>
+<p>Processing triggers for ureadahead (0.100.0-16) …</p>
 
-<p>If everything worked Docker will calculate SHA256 checksums for docker related data (<a href="https://docs.docker.com/engine/migration/">https://docs.docker.com/engine/migration/</a>). Depending on your hardware this might take some time during which the containers will not be available. Please wait until all containers are up and running again before you reboot your machine.</p>
+<p>If everything worked Docker will calculate SHA256 checksums for docker related data (https://docs.docker.com/engine/migration/). Depending on your hardware this might take some time during which the containers will not be available. Please wait until all containers are up and running again before you reboot your machine.</p>
 
 <p>If you are in doubt please run “sudo cat /etc/default/docker” and if the configs are identical:</p>
 
-<p>&#39;&#39;&#39;# Docker Upstart and SysVinit configuration file</p>
+<p>’’’# Docker Upstart and SysVinit configuration file</p>
 
-<h1 id="customize-location-of-docker-binary-especially-for-development-testing">Customize location of Docker binary (especially for development testing).</h1>
+<p>#Customize location of Docker binary (especially for development testing).</p>
 
-<p>#DOCKER=&quot;/usr/local/bin/docker&quot;</p>
+<p>#DOCKER=”/usr/local/bin/docker”</p>
 
-<h1 id="use-docker_opts-to-modify-the-daemon-startup-options">Use DOCKER_OPTS to modify the daemon startup options.</h1>
+<h1 id="use-dockeropts-to-modify-the-daemon-startup-options">Use DOCKER_OPTS to modify the daemon startup options.</h1>
 
-<p>#DOCKER_OPTS=&quot;--dns 8.8.8.8 --dns 8.8.4.4&quot;</p>
+<p>#DOCKER_OPTS=”–dns 8.8.8.8 –dns 8.8.4.4”</p>
 
 <h1 id="if-you-need-docker-to-use-an-http-proxy-it-can-also-be-specified-here">If you need Docker to use an HTTP proxy, it can also be specified here.</h1>
 
-<p>#export http_proxy=&quot;<a href="http://127.0.0.1:3128/">http://127.0.0.1:3128/</a>&quot;</p>
+<p>#export http_proxy=”http://127.0.0.1:3128/”</p>
 
-<h1 id="this-is-also-a-handy-place-to-tweak-where-docker-39-s-temporary-files-go">This is also a handy place to tweak where Docker&#39;s temporary files go.</h1>
+<h1 id="this-is-also-a-handy-place-to-tweak-where-dockers-temporary-files-go">This is also a handy place to tweak where Docker’s temporary files go.</h1>
 
-<p>#export TMPDIR=&quot;/mnt/bigdrive/docker-tmp&quot;</p>
+<p>#export TMPDIR=”/mnt/bigdrive/docker-tmp”</p>
 
-<p>DOCKER_OPTS=&quot;-r=false&quot;&#39;&#39;&#39;</p>
+<p>DOCKER_OPTS=”-r=false”’’’</p>
 
         </section>
         <footer class="post-footer">
