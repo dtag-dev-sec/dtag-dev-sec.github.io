@@ -77,6 +77,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 
 <a name="background"></a>
 # Changelog
+
 - **Docker** was updated to the latest **1.10.x** release
 - **ELK** was updated to the latest **Kibana 4.4.x**, **Elasticsearch 2.2.x** and **Logstash 2.2.x** releases.
 - More than **100 Visualizations** compiled to 12 individual **Dashboards** for every honeypot now allow you to monitor the *honeypot events* captured on your T-Pot installation; a huge improvement over T-Pot 15.03 which was only capable of showing Suricata NSM events.
