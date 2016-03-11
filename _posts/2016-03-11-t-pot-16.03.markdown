@@ -36,6 +36,7 @@ Furthermore we use the following tools
 
 
 # TL;DR
+<br>
 1. Meet the [system requirements](#requirements). The T-Pot installation needs at least 4 GB RAM and 64 GB free disk space as well as a working internet connection.
 2. Download the [tpotce.iso](http://community-honeypot.de/tpotce.iso) or [create it yourself](#createiso).
 3. Install the system in a [VM](#vm) or on [physical hardware](#hw) with [internet access](#placement).
@@ -78,7 +79,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 <a name="background"></a>
 
 # Changelog
-
+<br>
 - **Docker** was updated to the latest **1.10.x** release
 - **ELK** was updated to the latest **Kibana 4.4.x**, **Elasticsearch 2.2.x** and **Logstash 2.2.x** releases.
 - More than **100 Visualizations** compiled to 12 individual **Dashboards** for every honeypot now allow you to monitor the *honeypot events* captured on your T-Pot installation; a huge improvement over T-Pot 15.03 which was only capable of showing Suricata NSM events.
@@ -108,7 +109,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 <a name="concept"></a>
 
 # Technical Concept
-
+<br>
 T-Pot is based on Ubuntu Server 14.04.4 LTS.
 The honeypot daemons as well as other support components being used have been paravirtualized using [docker](http://docker.io).
 This allowed us to run multiple honeypot daemons on the same network interface without problems make the entire system very low maintenance. <br>The encapsulation of the honeypot daemons in docker provides a good isolation of the runtime environments and easy update mechanisms.
@@ -154,6 +155,7 @@ The individual docker configurations etc. we used can be found here:
 <a name="requirements"></a>
 
 # System Requirements
+<br>
 Depending on your installation type, whether you install on [real hardware](#hardware) or in a [virtual machine](#vm), make sure your designated T-Pot system meets the following requirements:
 
 ##### T-Pot Installation (Cowrie, Dionaea, ElasticPot, Glastopf, Honeytrap, ELK, Suricata+P0f)
@@ -192,7 +194,9 @@ When installing the T-Pot ISO image, make sure the target system (physical/virtu
 - A working internet connection
 
 <a name="installation"></a>
+
 # Installation
+<br>
 The installation of T-Pot is straight forward. Please be advised that you should have an internet connection up and running as all all the docker images for the chosen installation type need to be pulled from docker hub.
 
 Firstly, decide if you want to download our prebuilt installation ISO image [tpotce.iso](http://community-honeypot.de/tpotce.iso) ***or*** [create it yourself](#createiso).
@@ -210,7 +214,7 @@ You can download the prebuilt installation image [here](http://community-honeypo
 <a name="createiso"></a>
 
 ## Create your own ISO Image
-
+<br>
 For transparency reasons and to give you the ability to customize your install, we provide you the [ISO Creator](https://github.com/dtag-dev-sec/tpotce) that enables you to create your own ISO installation image.
 
 **Requirements to create the ISO image:**
