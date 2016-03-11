@@ -208,6 +208,7 @@ You can download the prebuilt installation image [here](http://community-honeypo
     7d6819c75fe93e5df89713a8e917eddf53e15c43 tpotce.iso
 
 <a name="createiso"></a>
+
 ## Create your own ISO Image
 
 For transparency reasons and to give you the ability to customize your install, we provide you the [ISO Creator](https://github.com/dtag-dev-sec/tpotce) that enables you to create your own ISO installation image.
@@ -233,6 +234,7 @@ The script will download and install dependencies necessary to build the image o
 After a successful build, you will find the ISO image `tpot.iso` in your directory.
 
 <a name="vm"></a>
+
 ## Running in VM
 You may want to run T-Pot in a virtualized environment. The virtual system configuration depends on your virtualization provider.
 
@@ -249,7 +251,9 @@ Lastly, mount the `tpotce.iso` ISO to the VM and continue with the installation.
 You can now jump [here](#firstrun).
 
 <a name="hardware"></a>
+
 ## Running on Hardware
+
 If you decide to run T-Pot on dedicated hardware, just follow these steps:
 
 1. Burn a CD from the ISO image or make a bootable USB stick using the image. <br>
@@ -272,7 +276,9 @@ You will need to set a new password after first login.
 All honeypot services are started automatically.
 
 <a name="placement"></a>
+
 # System Placement
+
 Make sure your system is reachable through the internet. Otherwise it will not capture any attacks, other than the ones from your hostile internal network! We recommend you put it in an unfiltered zone, where all TCP and UDP traffic is forwarded to T-Pot's network interface.
 
 If you are behind a NAT gateway (e.g. home router), here is a list of ports that should be forwarded to T-Pot.
@@ -299,12 +305,16 @@ T-Pot requires outgoing http and https connections for updates (ubuntu, docker) 
 
 
 <a name="options"></a>
+
 # Options
+
 The system is designed to run without any interaction or maintenance and automatically contribute to the community.<br>
 We know, for some this may not be enough. So here come some ways to further inspect the system and change configuration parameters.
 
 <a name="ssh"></a>
+
 ## Enabling 2FA & SSH
+
 By default, the SSH daemon is disabled. However, if you want to be able to login remotely via SSH and / or enable two-factor authentication (2fa) by using an authenticator app i.e. [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) just run the following script as the user *tsec*. ***Do not run it as root or via sudo***. Otherwise the setup of the two factor authentication will be bound to the user root who is not permitted to login remotely.
 
     ~/2fa_enable.sh
@@ -315,7 +325,9 @@ The script will also enable the SSH daemon on **tcp/64295**. It is configured to
 
 
 <a name="kibana"></a>
+
 ## Kibana Dashboard
+
 To access the kibana dashboard, ensure you have [enabled SSH](#ssh) on T-Pot. If you have you can use [SSH port forwarding](http://explainshell.com/explain?cmd=ssh+-p+64295+-l+tsec+-N+-L8080%3A127.0.0.1%3A64296+yourHoneypotIPaddress)  to access the kibana dashboard (make sure you leave the terminal open).
 
     ssh -p 64295 -l tsec -N -L8080:127.0.0.1:64296 <yourHoneypotIPaddress>
@@ -325,7 +337,9 @@ Finally, open a web browser and access [http://127.0.0.1:8080](http://127.0.0.1:
 ![Dashbaord](https://raw.githubusercontent.com/dtag-dev-sec/tpotce/master/doc/dashboard.png)
 
 <a name="maintenance"></a>
+
 ## Maintenance
+
 As mentioned before, the system was designed to be low maintenance. Basically, there is nothing you have to do but let it run. If one of the dockerized daemon fails, it will restart. If this fails, the regarding upstart job will be restarted.
 
 If you run into any problems, a reboot may fix it. ;)
@@ -333,7 +347,9 @@ If you run into any problems, a reboot may fix it. ;)
 If new versions of the components involved appear, we will test them and build new docker images. Those new docker images will be pushed to docker hub and downloaded to T-Pot and activated accordingly.  
 
 <a name="submission"></a>
+
 ## Community Data Submission
+
 We provide T-Pot in order to make it accessible to all parties interested in honeypot deployment. By default, the data captured is submitted to a community backend. This community backend uses the data to feed a [community data view](http://sicherheitstacho.eu/?peers=communityPeers), a separate channel on our own [Sicherheitstacho](http://sicherheitstacho.eu), which is powered by our own set of honeypots.
 You may opt out the submission to our community server by disabling it in the `[EWS]`-section of the config file `/data/ews/conf/ews.cfg`.
 
@@ -347,7 +363,9 @@ The *`/data/ews/conf/ews.cfg`* file contains many configuration parameters requi
 Please do not change anything other than those settings and only if you absolutely need to. Otherwise, the system may not work as expected.
 
 <a name="roadmap"></a>
+
 # Roadmap
+
 As with every development there is always room for improvements ...
 
 - Move to Ubuntu Server 16.04 LTS
@@ -364,7 +382,9 @@ Some features may be provided with updated docker images, others may require som
 You are always invited to participate in development on our [GitHub](https://github.com/dtag-dev-sec/tpotce) page.
 
 <a name="disclaimer"></a>
+
 # Disclaimer
+
 - We don't have access to your system. So we cannot remote-assist when you break your configuration. But you can simply reinstall.
 - The software was designed with best effort security, not to be in stealth mode. Because then, we probably would not be able to provide those kind of honeypot services.
 - You install and you run within your responsibility. Choose your deployment wisely as a system compromise can never be ruled out.
