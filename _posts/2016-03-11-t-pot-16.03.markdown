@@ -396,18 +396,24 @@ You are always invited to participate in development on our [GitHub](https://git
 
 
 <a name="faq"></a>
+
 # FAQ
+<br>
 Please report any issues or questions on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues), so the community can participate.
 
 <a name="contact"></a>
+
 # Contact
+<br>
 We provide the software **as is** in a Community Edition format. T-Pot is designed to run out of the box and with zero maintenance involved. <br>
 We hope you understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
 
 For general feedback you can write to cert @ telekom.de.
 
 <a name="licenses"></a>
+
 # Licenses
+<br>
 The software that T-Pot is built on, uses the following licenses.
 <br>GPLv2: [conpot (by Lukas Rist)](https://github.com/mushorg/conpot/blob/master/LICENSE.txt), [dionaea](https://github.com/DinoTools/dionaea/blob/master/LICENSE), [honeytrap (by Tillmann Werner)](https://github.com/armedpot/honeytrap/blob/master/LICENSE), [suricata](http://suricata-ids.org/about/open-source/)
 <br>GPLv3: [elasticpot (by Markus Schmall)](https://github.com/schmalle/ElasticPot), [emobility (by Mohamad Sbeiti)](https://github.com/dtag-dev-sec/emobility/blob/master/LICENSE), [ewsposter (by Markus Schroer)](https://github.com/dtag-dev-sec/ews/), [glastopf (by Lukas Rist)](https://github.com/glastopf/glastopf/blob/master/GPL)
