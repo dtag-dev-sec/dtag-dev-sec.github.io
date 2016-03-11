@@ -463,11 +463,13 @@ Without open source and the fruitful development community we are proud to be a 
 
 
 <a name="staytuned"></a>
+
 # Stay tuned ...
 
 We will be releasing a new version of T-Pot about every 6 months.
 
 <a name="funfact"></a>
+
 # Fun Fact
 
 Coffee just does not cut it anymore which is why we needed a different caffeine source and consumed *203* bottles of [Club Mate](https://de.wikipedia.org/wiki/Club-Mate) during the development of T-Pot 16.03 😇
