@@ -428,6 +428,7 @@ The software that T-Pot is built on, uses the following licenses.
 <br>[Ubuntu licensing](http://www.ubuntu.com/about/about-ubuntu/licensing)
 
 <a name="credits"></a>
+
 # Credits
 Without open source and the fruitful development community we are proud to be a part of T-Pot would not have been possible. Our thanks are extended but not limited to the following people and organizations:
 
@@ -451,7 +452,7 @@ Without open source and the fruitful development community we are proud to be a 
 * [tagcloud](https://github.com/stormpython/tagcloud/graphs/contributors)
 * [ubuntu](http://www.ubuntu.com/)
 
-###The following companies and organizations
+###The following companies and organizations<br>
 
 * [cannonical](http://www.canonical.com/)
 * [docker](https://www.docker.com/)
