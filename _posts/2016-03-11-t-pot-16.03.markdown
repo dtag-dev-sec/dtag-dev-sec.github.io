@@ -76,6 +76,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 - [Fun Fact](#funfact)
 
 <a name="background"></a>
+
 # Changelog
 
 - **Docker** was updated to the latest **1.10.x** release
