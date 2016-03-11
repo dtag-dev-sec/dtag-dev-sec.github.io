@@ -21,7 +21,7 @@ name: 'Deutsche Telekom AG Honeypot Project'
 author: 'Deutsche Telekom AG Honeypot Project'
 author_image: "/assets/images/dtag_logo.gif"
 
-paginate:	5
+paginate:	6
 
 url: "http://dtag-dev-sec.github.io/" # the base hostname & protocol for your site
 baseurl: ""
