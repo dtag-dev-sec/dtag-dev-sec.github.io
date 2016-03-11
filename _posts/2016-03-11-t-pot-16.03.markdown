@@ -52,6 +52,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 -->
 
 # Table of Contents
+<br>
 - [Changelog](#changelog)
 - [Technical Concept](#concept)
 - [System Requirements](#requirements)
