@@ -37,10 +37,10 @@ Furthermore we use the following tools
 
 # TL;DR
 <br>
-1. Meet the [system requirements](#requirements). The T-Pot installation needs at least 4 GB RAM and 64 GB free disk space as well as a working internet connection.
-2. Download the [tpotce.iso](http://community-honeypot.de/tpotce.iso) or [create it yourself](#createiso).
-3. Install the system in a [VM](#vm) or on [physical hardware](#hw) with [internet access](#placement).
-4. Enjoy your favorite beverage - [watch](http://sicherheitstacho.eu/?peers=communityPeers) and [analyze](#kibana).
+1. Meet the [system requirements](#requirements). The T-Pot installation needs at least 4 GB RAM and 64 GB free disk space as well as a working internet connection.<br>
+2. Download the [tpotce.iso](http://community-honeypot.de/tpotce.iso) or [create it yourself](#createiso).<br>
+3. Install the system in a [VM](#vm) or on [physical hardware](#hw) with [internet access](#placement).<br>
+4. Enjoy your favorite beverage - [watch](http://sicherheitstacho.eu/?peers=communityPeers) and [analyze](#kibana).<br>
 
 -
 
