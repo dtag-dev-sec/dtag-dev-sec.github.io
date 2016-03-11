@@ -106,6 +106,7 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 
 
 <a name="concept"></a>
+
 # Technical Concept
 
 T-Pot is based on Ubuntu Server 14.04.4 LTS.
@@ -151,6 +152,7 @@ The individual docker configurations etc. we used can be found here:
 - [suricata](https://github.com/dtag-dev-sec/suricata)
 
 <a name="requirements"></a>
+
 # System Requirements
 Depending on your installation type, whether you install on [real hardware](#hardware) or in a [virtual machine](#vm), make sure your designated T-Pot system meets the following requirements:
 
@@ -203,10 +205,11 @@ We provide an installation ISO image for download (~600MB), which is created usi
 You can download the prebuilt installation image [here](http://community-honeypot.de/tpotce.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato](http://www.strato.de) / [Cronon](http://www.cronon.de).
 
     shasum tpotce.iso
-    3b8f15eba2a478b106b202726661ce75c8fe7acc tpotce.iso
+    7d6819c75fe93e5df89713a8e917eddf53e15c43 tpotce.iso
 
 <a name="createiso"></a>
 ## Create your own ISO Image
+
 For transparency reasons and to give you the ability to customize your install, we provide you the [ISO Creator](https://github.com/dtag-dev-sec/tpotce) that enables you to create your own ISO installation image.
 
 **Requirements to create the ISO image:**
