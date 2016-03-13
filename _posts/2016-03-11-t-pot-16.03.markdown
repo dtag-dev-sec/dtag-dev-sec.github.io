@@ -103,6 +103,8 @@ In case you already have an Ubuntu 14.04.x running in your datacenter and are un
 - Size limits for the `/data` have been lifted and swap space is now 8 GB.
 - The number of **installation reboots** has been reduced to **2**. The first to finish the initial Ubuntu Server installation and the second after setting up T-Pot and its dependencies.
 - Some packages are now be installed directly from the installation image instead of downloading them.
+- **[Update 20160313]** - T-Pot host `/var/log/syslog` and `/var/log/auth.log` will now be forwarded to the ELK-stack.
+
 
 
 <a name="concept"></a>
@@ -210,7 +212,7 @@ We provide an installation ISO image for download (~600MB), which is created usi
 You can download the prebuilt installation image [here](http://community-honeypot.de/tpot.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato](http://www.strato.de) / [Cronon](http://www.cronon.de).
 
     shasum tpot.iso
-    ecb016fb391622518ac558041f3f609ba1eca419 tpot.iso
+    bee641b7af6c17f394d59659d573cbba99af9a6c tpot.iso
 
 <a name="createiso"></a>
 
