@@ -257,7 +257,7 @@ If you want to use a wifi card as primary NIC for T-Pot, please remind that not 
 
 Lastly, mount the `tpot.iso` ISO to the VM and continue with the installation.<br>
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/XpZBXlwrOZg" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/XpZBXlwrOZg" frameborder="0" allowfullscreen></iframe><br>
 
 You can now jump [here](#firstrun).
 
