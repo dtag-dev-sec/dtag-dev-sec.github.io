@@ -279,7 +279,7 @@ Whereas most CD burning tools allow you to burn from ISO images, the procedure t
 
 The installation requires very little interaction, only some locales and keyboard settings have to be answered. Everything else will be configured automatically. The system will reboot two times. Make sure it can access the internet as it needs to download the updates and the dockerized honeypot components. Depending on your network connection and the chosen installation type, the installation may take some time. During our tests (50Mbit down, 10Mbit up), the installation was usually finished within <=30 minutes.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/oXRvRIPQG1A" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/oXRvRIPQG1A" frameborder="0" allowfullscreen></iframe><br>
 
 Once the installation is finished, the system will automatically reboot and you will be presented with the T-Pot login screen. The user credentials for the first login are:
 
