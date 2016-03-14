@@ -336,6 +336,8 @@ Afterwards you can login via SSH using the password you set for the user *tsec* 
 
 The script will also enable the SSH daemon on **tcp/64295**. It is configured to prevent password login and use pubkey-authentication or challenge-response instead. We recommend using pubkey-authentication; just copy your SSH keyfile to `/home/tsec/.ssh/authorized_keys` and set the appropriate permissions (`chmod 600 authorized_keys`) as well as the correct ownership (`chown tsec:tsec authorized_keys`).
 
+<iframe width="853" height="480" src="https://www.youtube.com/embed/6GmIxVJ6eAQ" frameborder="0" allowfullscreen></iframe>
+
 
 <a name="kibana"></a>
 
