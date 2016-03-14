@@ -240,6 +240,8 @@ The script will download and install dependencies necessary to build the image o
 
 After a successful build, you will find the ISO image `tpot.iso` in your directory.
 
+<iframe width="853" height="480" src="https://www.youtube.com/embed/0ib7MG28ag0?list=PLBRkfSbyxi-ArIfQv-3XOaKun1UpZnr0X" frameborder="0" allowfullscreen></iframe>
+
 <a name="vm"></a>
 
 ## Running in VM
