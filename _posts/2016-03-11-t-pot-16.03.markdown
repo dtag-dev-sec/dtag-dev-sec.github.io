@@ -240,7 +240,7 @@ The script will download and install dependencies necessary to build the image o
 
 After a successful build, you will find the ISO image `tpot.iso` in your directory.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/0ib7MG28ag0?list=PLBRkfSbyxi-ArIfQv-3XOaKun1UpZnr0X" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/0ib7MG28ag0" frameborder="0" allowfullscreen></iframe>
 
 <a name="vm"></a>
 
@@ -256,6 +256,8 @@ You need to enable promiscuous mode for the network interface for suricata to wo
 If you want to use a wifi card as primary NIC for T-Pot, please remind that not all network interface drivers support all wireless cards. E.g. in VirtualBox, you then have to choose the *"MT SERVER"* model of the NIC.
 
 Lastly, mount the `tpot.iso` ISO to the VM and continue with the installation.<br>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/XpZBXlwrOZg" frameborder="0" allowfullscreen></iframe>
 
 You can now jump [here](#firstrun).
 
