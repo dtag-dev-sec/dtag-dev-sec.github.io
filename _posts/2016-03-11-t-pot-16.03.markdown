@@ -349,7 +349,9 @@ To access the kibana dashboard, ensure you have [enabled SSH](#ssh) on T-Pot. If
 
     ssh -p 64295 -l tsec -N -L8080:127.0.0.1:64296 <yourHoneypotIPaddress>
 
-<br><iframe width="853" height="480" src="https://www.youtube.com/embed/A3LF63os17k" frameborder="0" allowfullscreen></iframe>
+<br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/A3LF63os17k" frameborder="0" allowfullscreen></iframe>
+<br>
 
 Finally, open a web browser and access [http://127.0.0.1:8080](http://127.0.0.1:8080). The kibana dashboard can be customized to fit your needs. By default, we haven't added any filtering, because the filters depend on your setup. E.g. you might want to filter out your incoming administrative ssh connections and connections to update servers.
 
