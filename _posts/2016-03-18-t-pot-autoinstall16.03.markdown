@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Enhanced T-Pot? New Auto-Installer!"
-date:   2016-03-18 14:34:25
+date:   2016-03-18 13:34:25
 categories: mediator feature
 tags: featured
 image: /assets/images/docker.jpg
