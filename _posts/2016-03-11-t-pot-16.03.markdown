@@ -358,7 +358,7 @@ Finally, open a web browser and access [http://127.0.0.1:8080](http://127.0.0.1:
 ![Dashbaord](https://raw.githubusercontent.com/dtag-dev-sec/tpotce/master/doc/dashboard.png)
 
 <br>
-<iframe width="853" height="480" src="https://www.youtube.com/embed/bJ2Yg-ArGbk?list=PLBRkfSbyxi-ArIfQv-3XOaKun1UpZnr0X" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/bJ2Yg-ArGbk" frameborder="0" allowfullscreen></iframe>
 <br>
 
 <a name="maintenance"></a>
