@@ -10,7 +10,7 @@ Deutsche Telekom's honeypot project was started in 2010 by a small group of enth
 Data captured on our honeypot sensors is visualized on our [Sicherheitstacho](http://www.sicherheitstacho.eu) and we further use the information
 e.g. to inform our customers regarding infections.
 
-We currently run about 180 honeypot sensors as part of Deutsche Telekom's early warning system. Individual maintainance of such large number of systems became a time consuming and painful task. As a first step we created a standardized Raspberry PI honeypot image, which is managed by Puppet and distributed across our national subsidaries. To increase the efficiency even more, we decided to build T-Pot, a highly modular approach.
+We currently run about 180 honeypot sensors as part of Deutsche Telekom's early warning system. Individual maintenance of such large number of systems became a time consuming and painful task. As a first step we created a standardized Raspberry PI honeypot image, which is managed by Puppet and distributed across our national subsidiaries. To increase the efficiency even more, we decided to build T-Pot, a highly modular approach.
 
 
 # Contact
