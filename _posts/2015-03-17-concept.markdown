@@ -314,7 +314,7 @@ We planned a couple of features we haven't been able to implement yet. Those fea
 We provide the software as it is as a Community Edition. T-Pot is designed to run out of the box and with no maintenance effort. <br>
 We hope you understand that we are unable to provide support on an individual basis. We will try to answer common  questions and problems in the Q&A section. 
 
-For bugs, feature ideas and general feedback you can write to cert @ telekom.de. 
+Please understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
 
 <a name="licenses"></a>
 # Licenses
