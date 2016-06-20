@@ -18,7 +18,7 @@ We currently run about 180 honeypot sensors as part of Deutsche Telekom's early 
 
 # Contact
 
-If you want reach out to us, best contact us via email at cert @ telekom.de
+Please understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
 
 # Thanks
 
