@@ -431,9 +431,7 @@ Please report any issues or questions on our [GitHub issue list](https://github.
 # Contact
 <br>
 We provide the software **as is** in a Community Edition format. T-Pot is designed to run out of the box and with zero maintenance involved. <br>
-We hope you understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
-
-For general feedback you can write to cert @ telekom.de.
+Please understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
 
 <a name="licenses"></a>
 
