@@ -75,6 +75,7 @@ Furthermore we use the following tools
 - [Fun Fact](#funfact)
 
 <a name="background"></a>
+
 # Changelog
 - **Ubuntu 16.04 LTS** is now being used as T-Pot's OS base
 - **Size does matter** 😅
@@ -123,6 +124,7 @@ Furthermore we use the following tools
 - More **Smart links** are now included.
 
 <a name="concept"></a>
+
 # Technical Concept
 
 T-Pot is based on the network installer of Ubuntu Server 16.04 LTS.
@@ -170,6 +172,7 @@ The individual docker configurations etc. we used can be found here:
 - [suricata](https://github.com/dtag-dev-sec/suricata)
 
 <a name="requirements"></a>
+
 # System Requirements
 Depending on your installation type, whether you install on [real hardware](#hardware) or in a [virtual machine](#vm), make sure your designated T-Pot system meets the following requirements:
 
@@ -206,6 +209,7 @@ When installing the T-Pot ISO image, make sure the target system (physical/virtu
 - A working internet connection
 
 <a name="installation"></a>
+
 # Installation
 The installation of T-Pot is straight forward. Please be advised that you should have an internet connection up and running as all all the docker images for the chosen installation type need to be pulled from docker hub.
 
@@ -214,6 +218,7 @@ Firstly, decide if you want to download our prebuilt installation ISO image [tpo
 Secondly, decide where you want to let the system run: [real hardware](#hardware) or in a [virtual machine](#vm)?
 
 <a name="prebuilt"></a>
+
 ## Prebuilt ISO Image
 We provide an installation ISO image for download (~50MB), which is created using the same [tool](https://github.com/dtag-dev-sec/tpotce) you can use yourself in order to create your own image. It will basically just save you some time downloading components and creating the ISO image.
 You can download the prebuilt installation image [here](http://community-honeypot.de/tpot.iso) and jump to the [installation](#vm) section. The ISO image is hosted by our friends from [Strato](http://www.strato.de) / [Cronon](http://www.cronon.de).
@@ -222,6 +227,7 @@ You can download the prebuilt installation image [here](http://community-honeypo
     df6b1db24d0dcc421125dc973fbb2d17aa91cd9ff94607dde9d1b09a92bcbaf0 tpot.iso
 
 <a name="createiso"></a>
+
 ## Create your own ISO Image
 For transparency reasons and to give you the ability to customize your install, we provide you the [ISO Creator](https://github.com/dtag-dev-sec/tpotce) that enables you to create your own ISO installation image.
 
@@ -246,6 +252,7 @@ The script will download and install dependencies necessary to build the image o
 After a successful build, you will find the ISO image `tpot.iso` along with a SHA256 checksum `tpot.sha256`in your directory.
 
 <a name="vm"></a>
+
 ## Running in VM
 You may want to run T-Pot in a virtualized environment. The virtual system configuration depends on your virtualization provider.
 
@@ -262,6 +269,7 @@ Lastly, mount the `tpot.iso` ISO to the VM and continue with the installation.<b
 You can now jump [here](#firstrun).
 
 <a name="hardware"></a>
+
 ## Running on Hardware
 If you decide to run T-Pot on dedicated hardware, just follow these steps:
 
@@ -272,6 +280,7 @@ Whereas most CD burning tools allow you to burn from ISO images, the procedure t
 *Please note*: We will ensure the compatibility with the Intel NUC platform, as we really like the form factor, looks and build quality.
 
 <a name="firstrun"></a>
+
 ## First Run
 The installation requires very little interaction, only some locales and keyboard settings have to be answered. Everything else will be configured automatically. The system will reboot two times. Make sure it can access the internet as it needs to download the updates and the dockerized honeypot components. Depending on your network connection and the chosen installation type, the installation may take some time. During our tests (50Mbit down, 10Mbit up), the installation is usually finished within <=30 minutes.
 
@@ -289,6 +298,7 @@ You can also login from your browser: ``https://<your.ip>:64297``
 
 
 <a name="placement"></a>
+
 # System Placement
 Make sure your system is reachable through the internet. Otherwise it will not capture any attacks, other than the ones from your hostile internal network! We recommend you put it in an unfiltered zone, where all TCP and UDP traffic is forwarded to T-Pot's network interface.
 
@@ -316,11 +326,13 @@ T-Pot requires outgoing http and https connections for updates (ubuntu, docker) 
 
 
 <a name="options"></a>
+
 # Options
 The system is designed to run without any interaction or maintenance and automatically contribute to the community.<br>
 We know, for some this may not be enough. So here come some ways to further inspect the system and change configuration parameters.
 
 <a name="ssh"></a>
+
 ## SSH and web access
 By default, the SSH daemon only allows access on **tcp/64295** with a user / password combination from RFC1918 networks. However, if you want to be able to login remotely via SSH you need to put your SSH keys on the host as described below.<br>
 It is configured to prevent password login from official IP addresses and pubkey-authentication must be used. Copy your SSH keyfile to `/home/tsec/.ssh/authorized_keys` and set the appropriate permissions (`chmod 600 authorized_keys`) as well as the correct ownership (`chown tsec:tsec authorized_keys`).
@@ -335,6 +347,7 @@ and choose **WebSSH** from the navigation bar. You will be prompted to allow acc
 ![WebSSH](https://raw.githubusercontent.com/dtag-dev-sec/tpotce/master/doc/webssh.png)
 
 <a name="kibana"></a>
+
 ## Kibana Dashboard
 Just open a web browser and access and connect to `https://<your.ip>:64297`, enter
 
@@ -346,6 +359,7 @@ and the **Kibana dashboard** will automagically load. The Kibana dashboard can b
 ![Dashbaord](https://raw.githubusercontent.com/dtag-dev-sec/tpotce/master/doc/dashboard.png)
 
 <a name="tools"></a>
+
 ## Tools
 We included some web based management tools to improve and ease up on your daily tasks.
 
@@ -354,6 +368,7 @@ We included some web based management tools to improve and ease up on your daily
 ![Netdata](https://raw.githubusercontent.com/dtag-dev-sec/tpotce/master/doc/netdata.png)
 
 <a name="maintenance"></a>
+
 ## Maintenance
 As mentioned before, the system was designed to be low maintenance. Basically, there is nothing you have to do but let it run. If one of the dockerized daemon fails, it will restart. If this fails, the regarding upstart job will be restarted.
 
@@ -362,6 +377,7 @@ If you run into any problems, a reboot may fix it. ;)
 If new versions of the components involved appear, we will test them and build new docker images. Those new docker images will be pushed to docker hub and downloaded to T-Pot and activated accordingly.  
 
 <a name="submission"></a>
+
 ## Community Data Submission
 We provide T-Pot in order to make it accessible to all parties interested in honeypot deployment. By default, the data captured is submitted to a community backend. This community backend uses the data to feed a [community data view](http://sicherheitstacho.eu/?peers=communityPeers), a separate channel on our own [Sicherheitstacho](http://sicherheitstacho.eu), which is powered by our own set of honeypots.
 You may opt out the submission to our community server by disabling it in the `[EWS]`-section of the config file `/data/ews/conf/ews.cfg`.
@@ -376,6 +392,7 @@ The *`/data/ews/conf/ews.cfg`* file contains many configuration parameters requi
 Please do not change anything other than those settings and only if you absolutely need to. Otherwise, the system may not work as expected.
 
 <a name="roadmap"></a>
+
 # Roadmap
 As with every development there is always room for improvements ...
 
@@ -388,6 +405,7 @@ Some features may be provided with updated docker images, others may require som
 You are always invited to participate in development on our [GitHub](https://github.com/dtag-dev-sec/tpotce) page.
 
 <a name="disclaimer"></a>
+
 # Disclaimer
 - We don't have access to your system. So we cannot remote-assist when you break your configuration. But you can simply reinstall.
 - The software was designed with best effort security, not to be in stealth mode. Because then, we probably would not be able to provide those kind of honeypot services.
@@ -400,10 +418,12 @@ You are always invited to participate in development on our [GitHub](https://git
 
 
 <a name="faq"></a>
+
 # FAQ
 Please report any issues or questions on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues), so the community can participate.
 
 <a name="contact"></a>
+
 # Contact
 We provide the software **as is** in a Community Edition format. T-Pot is designed to run out of the box and with zero maintenance involved. <br>
 We hope you understand that we cannot provide support on an individual basis. We will try to address questions, bugs and problems on our [GitHub issue list](https://github.com/dtag-dev-sec/tpotce/issues).
@@ -411,6 +431,7 @@ We hope you understand that we cannot provide support on an individual basis. We
 For general feedback you can write to cert @ telekom.de.
 
 <a name="licenses"></a>
+
 # Licenses
 The software that T-Pot is built on, uses the following licenses.
 <br>GPLv2: [conpot (by Lukas Rist)](https://github.com/mushorg/conpot/blob/master/LICENSE.txt), [dionaea](https://github.com/DinoTools/dionaea/blob/master/LICENSE), [honeytrap (by Tillmann Werner)](https://github.com/armedpot/honeytrap/blob/master/LICENSE), [suricata](http://suricata-ids.org/about/open-source/)
@@ -422,6 +443,7 @@ The software that T-Pot is built on, uses the following licenses.
 <br>[Portainer](https://github.com/portainer/portainer/blob/develop/LICENSE)
 
 <a name="credits"></a>
+
 # Credits
 Without open source and the fruitful development community we are proud to be a part of T-Pot would not have been possible. Our thanks are extended but not limited to the following people and organizations:
 
@@ -460,10 +482,12 @@ Without open source and the fruitful development community we are proud to be a 
 
 
 <a name="staytuned"></a>
+
 # Stay tuned ...
 We will be releasing a new version of T-Pot about every 6 months.
 
 <a name="funfact"></a>
+
 # Fun Fact
 
 Coffee just does not cut it anymore which is why we needed a different caffeine source and consumed *107* bottles of [Club Mate](https://de.wikipedia.org/wiki/Club-Mate) during the development of T-Pot 16.10 😇
