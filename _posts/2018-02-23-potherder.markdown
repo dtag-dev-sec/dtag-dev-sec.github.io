@@ -123,7 +123,7 @@ Let me finish this post with a short anecdote: Just a couple of weeks ago, I ins
 
 In my opinion, this project is an example of great team spirit and collaboration. It is very agile and the focus shifted multiple times during the project. Initially, we were granted time as a "one-day-a-month" project. However, the efforts greatly exceeded the time given. Many hours of our own spare time went into this project but it was always supported, by our families and friends, as well as our employer. I would like to acknowledge that it would have never been so successful, if it hadn't been embraced by all layers of our management: our team leads, Markus as vice president and the management levels above up to the board of directors of Deutsche Telekom. 
 
-Thanks to everyone supporting this project and keeping it alive, especially to our pot herders @schmalle, @trixam, @t3chn0m4g3, @aydinchavez, @rverton, Rainer, Daniel, Norbert, Lutz, but also to our external supporters like Tillmann, The Honeynet Project, GDATA, Intel, all those I forgot. 
+Thanks to everyone supporting this project and keeping it alive, especially to our pot herders @schmalle, @trixam, @t3chn0m4g3, @aydinchavez, @rverton, Rainer, Daniel, Norbert, Ralf, Lutz, but also to our external supporters like Tillmann, The Honeynet Project, GDATA, Intel, all those I forgot. 
 
 And last but not least you for reading this and showing your interest.
 
