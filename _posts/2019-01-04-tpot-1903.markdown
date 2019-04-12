@@ -163,7 +163,7 @@ In T-Pot we combine the dockerized honeypots ...
 
 ... to give you the best out-of-the-box experience possible and an easy-to-use multi-honeypot appliance.
 
-![Architecture](doc/architecture.png)
+![Architecture](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/architecture.png)
 
 While data within docker containers is volatile we do ensure a default 30 day persistence of all relevant honeypot and tool data in the well known `/data` folder and sub-folders. The persistence configuration may be adjusted in `/opt/tpot/etc/logrotate/logrotate.conf`. Once a docker container crashes, all other data produced within its environment is erased and a fresh instance is started from the corresponding docker image.<br>
 
@@ -394,7 +394,7 @@ If you do not have a SSH client at hand and still want to access the machine via
 - user: **[tsec or user]** *you chose during one of the post install methods*
 - pass: **[password]** *you chose during the installation*
 
-![Cockpit Terminal](doc/cockpit3.png)
+![Cockpit Terminal](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/cockpit3.png)
 
 <a name="kibana"></a>
 ## Kibana Dashboard
@@ -405,21 +405,21 @@ Just open a web browser and connect to `https://<your.ip>:64297`, enter
 
 and **Kibana** will automagically load. The Kibana dashboard can be customized to fit your needs. By default, we haven't added any filtering, because the filters depend on your setup. E.g. you might want to filter out your incoming administrative ssh connections and connections to update servers.
 
-![Dashbaord](doc/kibana.png)
+![Dashbaord](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/kibana.png)
 
 <a name="tools"></a>
 ## Tools
 We included some web based management tools to improve and ease up on your daily tasks.
 
-![Cockpit Overview](doc/cockpit1.png)
+![Cockpit Overview](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/cockpit1.png)
 
-![Cockpit Containers](doc/cockpit2.png)
+![Cockpit Containers](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/cockpit2.png)
 
-![Cyberchef](doc/cyberchef.png)
+![Cyberchef](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/cyberchef.png)
 
-![ES Head Plugin](doc/headplugin.png)
+![ES Head Plugin](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/spiderfoot.png)
 
-![Spiderfoot](doc/spiderfoot.png)
+![Spiderfoot](https://github.com/dtag-dev-sec/tpotce/blob/master/doc/spiderfoot.png)
 
 
 <a name="maintenance"></a>
