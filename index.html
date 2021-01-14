@@ -1,19 +1,61 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>DTAG Community Honeypot Project</title>
+  <meta name="description" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="http://dtag-dev-sec.github.io//">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!--  <link rel="stylesheet" href=""> -->
+  <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+  <meta http-equiv="refresh" content="0; URL=https://telekom-security.github.io">
+
+</head>
+
+
+  <body>
+
+    <!-- header start -->
+
+<a href="http://dtag-dev-sec.github.io/" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/dtag_logo.gif)"></span></a>
+
+<!-- header end -->
+
+
+    <!-- content start -->
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="teaserimage">
+    <div class="teaserimage-image" style="background-image: url(/assets/images/tsy.jpg)">
         Teaser Image
     </div>
 </div>
 
 <header class="blog-header">
-    {% if site.logo %}
-      <a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.logo }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
+
+      <a class="blog-logo" href="http://dtag-dev-sec.github.io/" style="background-image: url('/assets/images/dtag_logo.gif')">DTAG Community Honeypot Project</a>
+
+    <h1 class="blog-title">DTAG Community Honeypot Project</h1>
+    <h2 class="blog-description"></h2>
     <div class="custom-links">
       <a href="http://dtag-dev-sec.github.io/mediator/feature/2015/03/01/about.html">About</a>
     </div>
@@ -22,48 +64,284 @@ layout: default
 
 <main class="content" role="main">
 
-    {% if site.tags.featured %}
+
     <h5 class="index-headline featured"><span>Featured</span></h5>
 
     <div class="container featured">
-      {% for post in site.tags.featured %}
+
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2020/08/20/tpot-2006.html" itemprop="url">Release T-Pot 20.06</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+              <p>On June, 30th 2020 we finally released T-Pot 20.06 after an extensive period of testing to ensure the update process (which is still in beta) is not likely to break things. With T-Pot 20.06 released we are proud to see that T-Pot is now growing faster than before. T-Pot 20.06...</p>
             </section>
             <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+              <time datetime="20 August 2020">20 August 2020</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
             </div>
           </div>
         </article>
-      {% endfor %}
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2019/04/01/tpot-1903.html" itemprop="url">Release T-Pot 19.03</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>T-Pot 19.03 T-Pot 19.03 runs on Debian (Sid), is based heavily on docker, docker-compose and includes dockerized versions of the following honeypots adbhoney, ciscoasa, conpot, cowrie, dionaea, elasticpot, glastopf, glutton, heralding, honeypy, honeytrap, mailoney, medpot, rdpy, snare, tanner Furthermore we use the following tools Cockpit for a lightweight, webui for...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="01 April 2019">01 April 2019</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2018/02/23/potherder.html" itemprop="url">Potherder</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Potherder. Operating traps for seven years @DTAG. It’s been seven years now that I started to contribute to the setup of Deutsche Telekom’s Early Warning System which is running multiple honeypots all over the globe and I would like to share my personal view on the history of the project,...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="23 February 2018">23 February 2018</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2017/11/07/t-pot-17.10.html" itemprop="url">T-Pot 17.10 - Multi-Honeypot Platform rEvolution</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>In October 2016 we released T-Pot 16.10 T-Pot 17.10 T-Pot 17.10 runs on the latest 16.04 LTS Ubuntu Server Network Installer image, is based on docker, docker-compose and includes dockerized versions of the following honeypots conpot, cowrie, dionaea, elasticpot, emobility, glastopf, honeytrap, mailoney, rdpy and vnclowpot Furthermore we use the...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="07 November 2017">07 November 2017</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2017/11/07/backend.html" itemprop="url">Opensourcing our backend (well, parts of it...)</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>The last years we have consistently supported the community by releasing new versions of our multi honeypot platform called T-Pot. This November we are proud to release a new version of T-Pot with exciting new features and … something more. For the last years our backend was driven by a...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="07 November 2017">07 November 2017</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2016/10/31/t-pot-16.10.html" itemprop="url">T-Pot 16.10 - Multi-Honeypot Platform Redefined</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>In March 2016 we released T-Pot 16.03 and the positive feedback encouraged us to continue development and share all the improvements with the community and are proud to present to you … T-Pot 16.10 T-Pot 16.10 now uses Ubuntu Server 16.04 LTS and is based on docker and includes dockerized...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="31 October 2016">31 October 2016</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2016/03/11/t-pot-16.03.html" itemprop="url">T-Pot 16.03 - Enhanced Multi-Honeypot Platform</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Last year we released T-Pot 15.03 as open source and we received lots of positive feedback and naturally feature requests which encouraged us to continue development and share our work as open source and are proud to present to you … T-Pot 16.03 T-Pot 16.03 is based on docker and...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="11 March 2016">11 March 2016</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/feature/2016/02/05/docker.1.10.html" itemprop="url">T-Pot - Important Update Notification (docker 1.10) </a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Yesterday Docker released version 1.10 (http://blog.docker.com/2016/02/docker-1-10/). While this release will improve on security and bring lots of useful features the automatic upgrade within T-Pot (http://dtag-dev-sec.github.io/feature/2015/10/23/updated-docker.html) will hang. You have to manually upgrade Docker to the latest version in order for your T-Pot installation to work properly. Please login to T-Pot...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="05 February 2016">05 February 2016</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/feature/2015/10/23/updated-docker.html" itemprop="url">T-Pot - Important Update Notification </a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Last spring we released T-Pot and ever since, Docker evolved rapidly with new versions, new features, and eventually a new repository. With regards to early releases of T-Pot and the fast development of Docker, we manually pinned the Docker versions used to the 1.5.x and 1.6.x branches. Now, with the...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="23 October 2015">23 October 2015</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2015/03/17/concept.html" itemprop="url">T-Pot: A Multi-Honeypot Platform</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>We created a honeypot platform, which is based on the well-established honeypots glastopf, kippo, honeytrap and dionaea, the network IDS/IPS suricata, elasticsearch-logstash-kibana, ewsposter and some docker magic. We want to make this technology available to everyone who is interested and release it as a Community Edition. We want to encourage...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="17 March 2015">17 March 2015</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2015/03/13/tacho.html" itemprop="url">Update of Sicherheitstacho</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>We have just now updated our Sicherheitstacho to be able to show the data
+from the community honeypots. Just follow this link.
+
+</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="13 March 2015">13 March 2015</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2015/03/10/stuff.html" itemprop="url">Our Projects</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Over the time, we developed a number of projects, which we mostly published on Github. Parts of them were developed in “one day a month” projects, others in spare time of dedicated persons. Our “one day a month” approach from the central security organization basically means, that the security employees...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="10 March 2015">10 March 2015</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title" itemprop="name"><a href="/mediator/feature/2015/03/01/about.html" itemprop="url">About</a></h2>
+            </header>
+            <section class="post-excerpt" itemprop="description">
+              <p>Deutsche Telekom’s honeypot project was started in 2010 by a small group of enthusiasts. We initially started with Lukas Rist’s great Glastopf web honeypot and soon added further honeypot daemons like kippo, honeytrap and dionaea. Over the next years we deployed more and more honeypots. Data captured on our honeypot...</p>
+            </section>
+            <div class="post-meta">
+              <time datetime="01 March 2015">01 March 2015</time>
+  <!--            <span class="post-tags-set">on <span class="post-tag-">, <a href="/tag/"></a></span></span>-->
+            </div>
+          </div>
+        </article>
+
     </div>
 
-    {% endif %}
+
 
 
 
     <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
+
+      <span class="page-number">Page  of </span>
+
     </nav>
 
 
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
+    <!--
+     -->
 
 </main>
+
+      </div>
+    </div>
+
+    <!-- content end -->
+
+    <!-- footer start -->
+
+<footer class="site-footer">
+
+    <div class="inner">
+         <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a> Build with Mediator design by Dirk Fabisch </section>
+    </div>
+</footer>
+
+<!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    $window.on('scroll', function() {
+      var top = $window.scrollTop();
+
+      if (top < 0 || top > 1500) { return; }
+      $image
+        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        .css('opacity', 1-Math.max(top/700, 0));
+    });
+    $window.trigger('scroll');
+
+    var height = $('.article-image').height();
+    $('.post-content').css('padding-top', height + 'px');
+
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({ scrollTop: target.offset().top }, 500);
+          return false;
+        }
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+
+
+  </body>
+
+</html>

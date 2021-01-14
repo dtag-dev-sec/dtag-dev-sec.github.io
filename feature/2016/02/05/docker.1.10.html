@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>T-Pot - Important Update Notification (docker 1.10) </title>
+  <meta name="description" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="http://dtag-dev-sec.github.io//feature/2016/02/05/docker.1.10.html">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!--  <link rel="stylesheet" href=""> -->
+  <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+  <meta http-equiv="refresh" content="0; URL=https://telekom-security.github.io/2016/02/honeypot-manual-docker-update.html">
+
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+<a href="http://dtag-dev-sec.github.io/" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/dtag_logo.gif)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url(/assets/images/docker.jpg)">
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">T-Pot - Important Update Notification (docker 1.10) </h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Deutsche Telekom AG Honeypot Project</h4>
+              on
+              <time datetime="2016-02-05 14:37">05 Feb 2016</time>
+              <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p>Yesterday Docker released version 1.10 (http://blog.docker.com/2016/02/docker-1-10/). While this release will
+improve on security and bring lots of useful features the automatic upgrade within T-Pot (http://dtag-dev-sec.github.io/feature/2015/10/23/updated-docker.html) will hang.</p>
+
+<p>You have to manually upgrade Docker to the latest version in order for your T-Pot installation to work properly.</p>
+
+<p>Please login to T-Pot and run the following commands:</p>
+
+<p>sudo apt-get update -y</p>
+
+<p>sudo apt-get upgrade -y</p>
+
+<p>sudo apt-get upgrade docker-engine -y</p>
+
+<p>Please answer the following question with (N)o for T-Pot to work correctly:</p>
+
+<p>Configuration file ‘/etc/default/docker’</p>
+
+<p>==&gt; Modified (by you or by a script) since installation.</p>
+
+<p>==&gt; Package distributor has shipped an updated version.</p>
+
+<p>What would you like to do about it ?  Your options are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Y or I  : install the package maintainer's version
+
+N or O  : keep your currently-installed version
+
+  D     : show the differences between the versions
+
+  Z     : start a shell to examine the situation
+</code></pre></div></div>
+
+<p>The default action is to keep your current version.</p>
+
+<p>*** docker (Y/I/N/O/D/Z) [default=N] ? N</p>
+
+<p>Installing new version of config file /etc/bash_completion.d/docker …</p>
+
+<p>docker start/running, process 92746</p>
+
+<p>Processing triggers for libc-bin (2.19-0ubuntu6.6) …</p>
+
+<p>Processing triggers for ureadahead (0.100.0-16) …</p>
+
+<p>If everything worked Docker will calculate SHA256 checksums for docker related data (https://docs.docker.com/engine/migration/). Depending on your hardware this might take some time during which the containers will not be available. Please wait until all containers are up and running again before you reboot your machine.</p>
+
+<p>If you are in doubt please run “sudo cat /etc/default/docker” and if the configs are identical:</p>
+
+<p>’’’# Docker Upstart and SysVinit configuration file</p>
+
+<p>#Customize location of Docker binary (especially for development testing).</p>
+
+<p>#DOCKER=”/usr/local/bin/docker”</p>
+
+<h1 id="use-docker_opts-to-modify-the-daemon-startup-options">Use DOCKER_OPTS to modify the daemon startup options.</h1>
+
+<p>#DOCKER_OPTS=”–dns 8.8.8.8 –dns 8.8.4.4”</p>
+
+<h1 id="if-you-need-docker-to-use-an-http-proxy-it-can-also-be-specified-here">If you need Docker to use an HTTP proxy, it can also be specified here.</h1>
+
+<p>#export http_proxy=”http://127.0.0.1:3128/”</p>
+
+<h1 id="this-is-also-a-handy-place-to-tweak-where-dockers-temporary-files-go">This is also a handy place to tweak where Docker’s temporary files go.</h1>
+
+<p>#export TMPDIR=”/mnt/bigdrive/docker-tmp”</p>
+
+<p>DOCKER_OPTS=”-r=false”’’’</p>
+
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+
+
+
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4>Deutsche Telekom AG Honeypot Project</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="2016-02-05 14:37">05 Feb 2016</time></p>
+            </section>
+          </div>
+
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="/">Deutsche Telekom AG Honeypot Project</a> &copy; 2020<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image"  style="background-image: url(/assets/images/tsy.jpg)">
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">DTAG Community Honeypot Project</h1>
+        <h2 class="blog-description"></h2>
+        <a href="/" class="btn">Back to Overview</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    $window.on('scroll', function() {
+      var top = $window.scrollTop();
+
+      if (top < 0 || top > 1500) { return; }
+      $image
+        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        .css('opacity', 1-Math.max(top/700, 0));
+    });
+    $window.trigger('scroll');
+
+    var height = $('.article-image').height();
+    $('.post-content').css('padding-top', height + 'px');
+
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({ scrollTop: target.offset().top }, 500);
+          return false;
+        }
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+
+  </body>
+</html>

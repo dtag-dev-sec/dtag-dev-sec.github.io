@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>T-Pot - Important Update Notification </title>
+  <meta name="description" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="http://dtag-dev-sec.github.io//feature/2015/10/23/updated-docker.html">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!--  <link rel="stylesheet" href=""> -->
+  <link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+  <meta http-equiv="refresh" content="0; URL=https://telekom-security.github.io/2015/10/honeypot-docker-repository-update.html">
+
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+<a href="http://dtag-dev-sec.github.io/" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/dtag_logo.gif)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url(/assets/images/docker.jpg)">
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">T-Pot - Important Update Notification </h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">Deutsche Telekom AG Honeypot Project</h4>
+              on
+              <time datetime="2015-10-23 15:37">23 Oct 2015</time>
+              <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
+            </div>
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p>Last spring we released T-Pot and ever since, Docker evolved rapidly with new versions, new features, and eventually a new repository. With regards to early releases of T-Pot and the fast development of Docker, we manually pinned the Docker versions used to the 1.5.x and 1.6.x branches. Now, with the latest Docker releases and Dockers’ switch to a new repository for Ubuntu (and deprecating the one we have been using), we updated the T-Pot ISO and the GitHub project accordingly.</p>
+
+<p>So, from now on, we will stick to the latest Docker version.</p>
+
+<p><em>But, why is this important to you?</em></p>
+
+<p>Well, Docker deprecated their old versions and will no longer serve images to old versions. So you will have to update in order to keep the system fully functional.</p>
+
+<p>If you want to upgrade your existing installation you can download <a href="https://github.com/dtag-dev-sec/tpotce/blob/master/upgrade.sh">this upgrade script</a>:</p>
+
+<ol>
+  <li>
+    <p>Login to your T-Pot as <em>tsec</em> and execute the following commands, <strong>but only run the script once</strong>!</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/dtag-dev-sec/tpotce.git
+sudo tpotce/./upgrade.sh
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If everything worked fine the machine will reboot.</p>
+  </li>
+  <li>
+    <p>Check if your containers are running correctly by either by pressing CTRL+F2 or by logging in as <em>tsec</em> and <code class="language-plaintext highlighter-rouge">sudo status.sh</code>.</p>
+  </li>
+</ol>
+
+<p>Otherwise, if you wish to perform a new installation you can download the new ISO <a href="http://community-honeypot.de/tpotce.iso">here</a>.</p>
+
+<p>In case you encounter any problems, feel free to post an issue <a href="https://github.com/dtag-dev-sec/tpotce/issues">here</a>.</p>
+
+
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+
+
+
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/dtag_logo.gif)">Blog Logo</div>
+              <h4>Deutsche Telekom AG Honeypot Project</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="2015-10-23 15:37">23 Oct 2015</time></p>
+            </section>
+          </div>
+
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="/">Deutsche Telekom AG Honeypot Project</a> &copy; 2020<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image"  style="background-image: url(/assets/images/tsy.jpg)">
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">DTAG Community Honeypot Project</h1>
+        <h2 class="blog-description"></h2>
+        <a href="/" class="btn">Back to Overview</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    $window.on('scroll', function() {
+      var top = $window.scrollTop();
+
+      if (top < 0 || top > 1500) { return; }
+      $image
+        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        .css('opacity', 1-Math.max(top/700, 0));
+    });
+    $window.trigger('scroll');
+
+    var height = $('.article-image').height();
+    $('.post-content').css('padding-top', height + 'px');
+
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({ scrollTop: target.offset().top }, 500);
+          return false;
+        }
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+
+  </body>
+</html>
